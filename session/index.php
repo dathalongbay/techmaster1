@@ -1,6 +1,14 @@
 <?php
 // Start the session
 session_start();
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+if (isset($_SESSION['email']) && ($_SESSION['email'] == "dathalongbay@gmail.com")) {
+
+    header("Location: http://localhost/techmaster1//session/admin.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
