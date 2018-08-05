@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +19,12 @@
 </head>
 <body>
 <div class="container">
+
+    <?php
+    echo "<pre>";
+    print_r($_SESSION);
+    echo "</pre>";
+    ?>
 
     <form class="form-signin" style="margin: 0 auto; width: 500px">
         <h2 class="form-signin-heading">Please sign in</h2>
