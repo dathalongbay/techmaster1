@@ -21,6 +21,13 @@ session_start();
 <div class="container">
 
     <?php
+
+    // Set session variables
+    $_SESSION["username"] = "dat";
+    $_SESSION["address"] = "ha noi";
+    echo "Session variables are set.";
+
+
     echo "<pre>";
     print_r($_SESSION);
     echo "</pre>";
